@@ -20,7 +20,14 @@ body{
 .title{
   @include keepon;
   font-size: 40px;
-  padding: 30px 65px;
+  padding: 30px 65px 25px;
   border-radius: 60px;
   background-color: transparent;
+  margin-bottom: 90px;
+}
+
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
