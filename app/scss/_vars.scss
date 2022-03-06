@@ -1,0 +1,24 @@
+@mixin montserrat-400{
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+}
+@mixin montserrat-500{
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 500;
+}
+@mixin montserrat-700{
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+@mixin montserrat-900{
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: 900;
+}
+@mixin pixel{
+  font-family: "PixelIntv", sans-serif;
+  font-weight: 400;
+}
+@mixin keepon{
+  font-family: "KeeponTruckin", sans-serif;
+  font-weight: 400;
+}

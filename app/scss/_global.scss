@@ -1,6 +1,26 @@
-
+body,
+html{
+  height: 100%;
+}
 
 body{
+  display: flex;
+  flex-direction: column;
+  background-color: #444;
+  @include montserrat-500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+}
 
+.main{
+  flex-grow: 1;
+}
 
+.title{
+  @include keepon;
+  font-size: 40px;
+  padding: 30px 65px;
+  border-radius: 60px;
+  background-color: transparent;
 }
