@@ -9,7 +9,7 @@
 }
 
 .about{
-  background: url(images/about-bg.jpg) repeat;
+  background: url('../images/about-bg.jpg') repeat;
   padding: 120px 0 80px;
   &__wrapper{
     margin-bottom: 120px;
@@ -104,6 +104,7 @@
     color: #2F393C;
   }
   &__stack-box{
+    text-align: center;
     position: relative;
     padding-left: 115px;
     &::before{
@@ -144,5 +145,79 @@
   }
 }
 
+.projects{
+  background: url('../images/projects-bg.jpg') center/cover;
+  text-align: center;
+  padding: 120px 0;
+  &__title,
+  &__btn{
+    color: #2596FF;
+    border-radius: 0;
+    background-color: #fcfcfc;
+    padding: 25px 15px;
+    max-width: 405px;
+  }
+
+  &__btn{
+    @include pixel;
+    border: 1px solid #2596ff;
+    box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.25);
+    &:active{
+      transform: scale(0.85);
+    }
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    position: relative;
+    margin-bottom: 40px;
+    border: 1px solid #000;
+    filter: drop-shadow(10px 10px 0px #FF958E);
+    transition: filter 0.4s;
+    &:hover{
+      filter: drop-shadow(10px 10px 0px #2596FF);
+      transition: filter 0.4s;
+    }
+  }
+
+  &__hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  &__description{
+    background: #FF958E;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 25%;
+    max-width: 75%;
+    left: 12%;
+    padding: 15px;
+    transform: scale(0);
+  }
+
+  &__item:hover .projects__hover,
+  &__item:hover .projects__description{
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.4s;
+  }
+
+  #boxes .box:nth-child(n + 3){
+    display: none;
+  }
+}
 
 @import 'media';
