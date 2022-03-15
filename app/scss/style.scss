@@ -5,15 +5,12 @@
 @import "libs";
 
 .header {
-  // height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+  
   &__top {
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: #444;
+    background-color: transparent;
     transform: translateY(0);
     transition: all 0.8s;
     transition-delay: 0.5s;
@@ -21,6 +18,9 @@
   &__top.hide {
     transform: translateY(-100%);
     transition: all 0.8s;
+  }
+  &__top.header__top--bg {
+    background-color: #444;
   }
   &__top.header__top--bg .header__top-inner {
     padding: 10px 15px;
@@ -58,6 +58,58 @@
       color: #2596ff;
       border-bottom: 1px solid #2596ff;
     }
+  }
+  .menu__item.active a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #2596ff;
+    color: #2596ff;
+  }
+}
+
+.hero{
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.8s ease-in;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  position: relative;
+  &.playing {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.8s ease-out;
+  }
+  .video-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  &__photos-inner {
+    position: absolute;
+    max-width: 300px;
+    filter: drop-shadow(10px 10px 0px #2596ff);
+    transform: translateY(0);
+    transition: transform 0.8s ease-in;
+    transition-delay: 0.5s;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border: 1px solid #ff958e;
+    }
+  }
+  .photo-box--1{
+    left: 75%;
+    top: 20%;
+  }
+  .photo-box--2{
+    top: 40%;
+    left: 8%;
+  }
+  &__photos-inner.hide {
+    transform: translateY(-300%);
+    transition: transform 0.8s ease-out;
+    transition-delay: 1s;
   }
   &__content {
     height: 100vh;
@@ -97,6 +149,7 @@
     cursor: pointer;
     color: #fff;
     @include pixel;
+    transition: font-size 0.5s;
     svg {
       margin-left: 15px;
     }
@@ -109,10 +162,17 @@
       transform: scale(0.95);
     }
   }
-
   &__content-btn:hover svg {
     path {
       fill: #2596ff;
+    }
+  }
+  &__content-btn.hide{
+    font-size: 0;
+    transition: font-size 1s;
+    svg{
+      margin-left: 0;
+
     }
   }
 }
@@ -402,6 +462,12 @@
       line-height: 22px;
       background: #ff958e;
       color: #fff;
+      &:hover {
+        color: #2596ff;
+      }
+      &:active {
+        color: #fff;
+      }
     }
   }
   &__socials {
@@ -425,7 +491,7 @@
     line-height: 22px;
     color: #2596ff;
     margin-bottom: 40px;
-    &:hover {
+    a:hover {
       text-decoration: underline;
     }
   }
@@ -450,7 +516,7 @@
   }
 }
 
-.footer{
+.footer {
   padding: 30px 0;
   text-align: center;
 }

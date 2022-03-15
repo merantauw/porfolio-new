@@ -1,5 +1,20 @@
 $(function () {
 
+  //навигационное меню
+  const li = document.querySelectorAll('.menu__item');
+  const sec = document.querySelectorAll('section');
+  const secHeight = sec.clientHeight;
+
+  function activeMenu() {
+    let len = sec.length;
+    while (--len && scrollY + 150 <= sec[len].offsetTop) { }
+    li.forEach(ltx => ltx.classList.remove('active'));
+    li[len].classList.add('active');
+  }
+
+  activeMenu();
+  window.addEventListener('scroll', activeMenu);
+
   //lazy-loading
   $('#loading').on('click', function () {
     $('#boxes .box:hidden').slice(0, 2).slideDown()
@@ -43,12 +58,12 @@ $(function () {
     }
   });
 
-  $('.header__content-btn').on('click', function () {
-    $('.header__content-box').toggleClass('hide');
+  $('.hero__content-btn').on('click', function () {
+    $('.hero__content-box').toggleClass('hide');
     $('.header__top').toggleClass('hide');
+    $('.hero__photos-inner').toggleClass('hide');
+    $('.hero').toggleClass('playing');
+    $('.hero__content-btn').toggleClass('hide');
   });
-
-  //навигационное меню
-  
 
 })
