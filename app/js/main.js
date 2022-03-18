@@ -1,20 +1,5 @@
 $(function () {
 
-  //навигационное меню
-  const li = document.querySelectorAll('.menu__item');
-  const sec = document.querySelectorAll('section');
-  const secHeight = sec.clientHeight;
-
-  function activeMenu() {
-    let len = sec.length;
-    while (--len && scrollY + 150 <= sec[len].offsetTop) { }
-    li.forEach(ltx => ltx.classList.remove('active'));
-    li[len].classList.add('active');
-  }
-
-  activeMenu();
-  window.addEventListener('scroll', activeMenu);
-
   //lazy-loading
   $('#loading').on('click', function () {
     $('#boxes .box:hidden').slice(0, 2).slideDown()
@@ -24,7 +9,7 @@ $(function () {
   });
 
   //плавный скролл
-  $("#menu").on("click", "a", function (event) {
+  $(".menu__link, .header__logo, .about__item-link").on("click", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
@@ -32,17 +17,6 @@ $(function () {
       //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top;
     //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({
-      scrollTop: top
-    }, 1500);
-  });
-
-  $('.header__logo').on('click', function (event) {
-    event.preventDefault();
-    //забираем идентификатор бока с атрибута href
-    var id = $(this).attr('href'),
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
-      top = $(id).offset().top;
     $('body,html').animate({
       scrollTop: top
     }, 1500);
@@ -58,6 +32,23 @@ $(function () {
     }
   });
 
+  //навигационное меню
+  const li = document.querySelectorAll('.menu__item');
+  const sec = document.querySelectorAll('section');
+
+  function activeMenu() {
+    let len = sec.length;
+    // console.log(sec);
+    while (--len && scrollY + 150 <= sec[len].offsetTop) { }
+    li.forEach(ltx => ltx.classList.remove('active'));
+    li[len].classList.add('active');
+  }
+
+  activeMenu();
+  window.addEventListener('scroll', activeMenu);
+
+  //навигация + бургер-меню
+
   $('.hero__content-btn').on('click', function () {
     $('.hero__content-box').toggleClass('hide');
     $('.header__top').toggleClass('hide');
@@ -65,5 +56,17 @@ $(function () {
     $('.hero').toggleClass('playing');
     $('.hero__content-btn').toggleClass('hide');
   });
+
+  $('.header__burger, .menu__item').on('click', function () {
+    $('.header__top').toggleClass('active');
+    $('.header__burger').toggleClass('active');
+    $('.body').toggleClass('lock');
+  });
+
+  $('.header__logo').on('click', function () {
+    $('.header__top').removeClass('active');
+    $('.header__burger').removeClass('active');
+    $('.body').removeClass('lock');
+  })
 
 })
