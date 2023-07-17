@@ -5,37 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webdev portfolio</title>
+  <title>Разработка продающих сайтов для бизнеса</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
+  <div class="stars"></div>
 
   <header class="header">
     <div class="header__top">
       <div class="header__top-inner">
         <a class="header__logo" href="#main">
-          <img src="images/logo.png" alt="logo image">
+          <img src="img/icons/logo.png" alt="Логотип">
         </a>
         <ul class="menu" id="menu">
           <li class="menu__item active">
             <a class="menu__link" href="#main">
-              Home
+              Главная
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#about">
-              About me
+              Обо мне
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#projects">
-              Projects
+              Портфолио
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#contact">
-              Contact me
+              Контакты
             </a>
           </li>
         </ul>
@@ -48,47 +49,81 @@
 
   <main class="main">
 
-    <section class="hero" id="hero">
-      <video autoplay muted loop class="video-bg">
-        <source src="video/video-bg.mp4">
-      </video>
-      <div class="hero__photos-inner photo-box--1">
-        <img src="images/header-1.jpg" alt="my photo">
-      </div>
-      <div class="hero__photos-inner photo-box--2">
-        <img src="images/header-2.jpg" alt="my photo">
-      </div>
-      <div class="hero__content" id="main">
-        <div class="container">
-          <div class="hero__content-box">
-            <span>Hello, my name is Zholudev Vladislav and I am</span>
-            <h1 class="hero__title">frontend-developer</h1>
-            <span>creating modern and responsive Web applications</span>
-          </div>
-          <button class="hero__content-btn" type="button">
-            watch short movie
-            <svg width="43" height="34" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M41.9762 2.82055H11.0571V1.11629C11.0571 0.551567 10.5989 0.0937347 10.0333 0.0937347H5.11905C4.5535 0.0937347 4.09524 0.551567 4.09524 1.11629V2.82055H1.02381C0.458257 2.82055 0 3.27838 0 3.84311V32.8837C0 33.4484 0.458257 33.9063 1.02381 33.9063H41.9762C42.5417 33.9063 43 33.4484 43 32.8837V3.84311C43 3.27838 42.5417 2.82055 41.9762 2.82055ZM6.14286 2.13885H9.00952V2.82055H6.14286V2.13885ZM40.9524 31.8611H2.04762V4.86566C3.5548 4.86566 39.1621 4.86566 40.9524 4.86566V31.8611Z"
-                fill="white" />
-              <path
-                d="M21.5 26.6802C26.4302 26.6802 30.4413 22.6741 30.4413 17.7499C30.4413 12.8257 26.4302 8.81955 21.5 8.81955C16.5697 8.81955 12.5587 12.8257 12.5587 17.7499C12.5587 22.6741 16.5697 26.6802 21.5 26.6802ZM21.5 10.8647C25.3012 10.8647 28.3936 13.9533 28.3936 17.7499C28.3936 21.5464 25.3012 24.6351 21.5 24.6351C17.6988 24.6351 14.6063 21.5464 14.6063 17.7499C14.6063 13.9533 17.6988 10.8647 21.5 10.8647Z"
-                fill="white" />
-              <path
-                d="M21.5 23.2717C24.5485 23.2717 27.0286 20.7945 27.0286 17.7499C27.0286 14.7052 24.5485 12.2281 21.5 12.2281C18.4515 12.2281 15.9714 14.7052 15.9714 17.7499C15.9714 20.7945 18.4515 23.2717 21.5 23.2717ZM21.5 14.2732C23.4194 14.2732 24.981 15.8328 24.981 17.7499C24.981 19.667 23.4194 21.2266 21.5 21.2266C19.5806 21.2266 18.0191 19.667 18.0191 17.7499C18.0191 15.8328 19.5806 14.2732 21.5 14.2732Z"
-                fill="white" />
-              <path
-                d="M33.5127 13.3188H37.881C38.4465 13.3188 38.9048 12.861 38.9048 12.2962V7.93334C38.9048 7.36861 38.4465 6.91078 37.881 6.91078H33.5127C32.9471 6.91078 32.4889 7.36861 32.4889 7.93334V12.2962C32.4889 12.861 32.9471 13.3188 33.5127 13.3188ZM34.5365 8.9559H36.8571V11.2737H34.5365V8.9559Z"
-                fill="white" />
-              <path
-                d="M5.25556 26.9529H9.21429C9.77984 26.9529 10.2381 26.4951 10.2381 25.9303C10.2381 25.3656 9.77984 24.9078 9.21429 24.9078H5.25556C4.69001 24.9078 4.23175 25.3656 4.23175 25.9303C4.23175 26.4951 4.69001 26.9529 5.25556 26.9529Z"
-                fill="white" />
-              <path
-                d="M5.25556 29.816H9.21429C9.77984 29.816 10.2381 29.3582 10.2381 28.7935C10.2381 28.2288 9.77984 27.7709 9.21429 27.7709H5.25556C4.69001 27.7709 4.23175 28.2288 4.23175 28.7935C4.23175 29.3582 4.69001 29.816 5.25556 29.816Z"
-                fill="white" />
-            </svg>
-          </button>
+    <section class="layers" id="main">
+      <div class="layers__container">
+        <div class="layers__item layer-1">
+          <!-- <div style="background-image: url(img/cyberbg-5.jpeg);"></div> -->
         </div>
+
+        <div class="layers__item layer-2">
+          <div class="hero-content">
+            <h1>Я создаю продающие сайты</h1>
+            <p class="hero-content__text">а не произведения искусства</p>
+            <div class="sparkle-button">
+              <button>
+                <span class="spark"></span>
+                <span class="backdrop"></span>
+                <span class="text">Смотреть проекты</span>
+              </button>
+              <!-- <div class="bodydrop"></div> -->
+              <span aria-hidden="true" class="particle-pen">
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div></div>
+        </div>
+        <div class="layers__item layer-3" style="background-image: url(img/test-2.png)">
+        </div>
+        <div class="layers__item layer-4" style="background-image: url(img/test-6.png)"></div>
       </div>
     </section>
 
@@ -96,124 +131,14 @@
       <div class="container">
         <div class="about__wrapper">
           <h2 class="about__title title">
-            This is what i do
+            Обо мне
           </h2>
-          <ul class="about__items">
-            <li class="about__item">
-              <div class="about__item-top about__item--layout">
-                <a class="about__item-link" href="#projects">
-                  watch portfolio
-                </a>
-                <h3 class="about__item-title">
-                  Layout
-                </h3>
-              </div>
-              <p class="about__item-description">
-                I develop websites of any complexiity according to layouts
-              </p>
-            </li>
-            <li class="about__item">
-              <div class="about__item-top about__item--hosting">
-                <a class="about__item-link" href="#projects">
-                  watch portfolio
-                </a>
-                <h3 class="about__item-title">
-                  Hosting
-                </h3>
-              </div>
-              <p class="about__item-description">
-                I host websites on some CMS like WordPress, Joomla and others
-              </p>
-            </li>
-            <li class="about__item">
-              <div class="about__item-top about__item--repairs">
-                <a class="about__item-link" href="#projects">
-                  watch portfolio
-                </a>
-                <h3 class="about__item-title">
-                  Repairs
-                </h3>
-              </div>
-              <p class="about__item-description">
-                I help with management and
-                redevelopement of current websites
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="about__stack" id="stack" name="stack">
-          <h2 class="about__stack-title title">
-            This is what I work with
-          </h2>
-          <ul class="about__stack-inner">
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-html">
-                <span class="about__stack-experience">
-                  exp.: 1 year
-                </span>
-                <span class="about__stack-technology">
-                  HTML
-                </span>
-              </div>
-            </li>
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-scss">
-                <span class="about__stack-experience">
-                  exp.: 9 months
-                </span>
-                <span class="about__stack-technology">
-                  SCSS
-                </span>
-              </div>
-            </li>
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-js">
-                <span class="about__stack-experience">
-                  exp.: 3 months
-                </span>
-                <span class="about__stack-technology">
-                  JavaScript
-                </span>
-              </div>
-            </li>
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-figma">
-                <span class="about__stack-experience">
-                  exp.: 9 months
-                </span>
-                <span class="about__stack-technology">
-                  Figma
-                </span>
-              </div>
-            </li>
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-gulp">
-                <span class="about__stack-experience">
-                  exp.: 9 months
-                </span>
-                <span class="about__stack-technology">
-                  Gulp
-                </span>
-              </div>
-            </li>
-
-            <li class="about__stack-item">
-              <div class="about__stack-box stack-git">
-                <span class="about__stack-experience">
-                  exp.: 4 months
-                </span>
-                <span class="about__stack-technology">
-                  GitHub
-                </span>
-              </div>
-            </li>
-
-          </ul>
+          <div class="about__description">
+            <p class="about__text text-1">Привет! Меня зовут Влад. Я разработчик-самоучка. Создаю сайты c 2021 года, чтобы решать коммерческие задачи: вывод бизнеса в интернет, лидогенерация и увеличение узнаваемости бренда.</p>
+            <p class="about__text text-2">Создаю дизайны как с нуля, так и редизайню существующие проекты; осуществляю вёрстку и устанавливаю сайты в интернете. </p>
+            <p class="about__text text-3">В разработке я использую коробочные решения, CMS Wordpress/Joomla, что позволяет мне держать низкие цены на свои услуги, а вам получить сайт-одностраничник в течение 14 дней с момента подписания договора; и до 28 дней — многостраничник.</p>
+          </div>
+          <a class="about__btn btn" href="#">Заказать консультацию</a>
         </div>
       </div>
     </section>
@@ -221,7 +146,7 @@
     <section class="projects" id="projects" name="projects">
       <div class="container">
         <h2 class="projects__title title">
-          Some of my projects
+          Мои проекты
         </h2>
         <ul class="projects__list" id="boxes">
 
@@ -241,7 +166,7 @@
               <img src="images/projects/2.jpg" alt="project photo">
               <div class="projects__hover">
                 <p class="projects__description">
-                  The pretty one first page for travel agency website with floating content-boxes and css grid ;)
+                  The pretty one first page for travel agency website with floating content-boxes and css grid;
                 </p>
               </div>
             </a>
@@ -299,10 +224,39 @@
       </div>
     </section>
 
+    <section class="howto">
+      <div class="container">
+        <h2 class="howto__title title">Как работаю</h2>
+        <ul class="howto__list">
+          <li class="howto__item">
+            <h3 class="howto__subtitle">Знакомство</h3>
+            <p class="howto__desc">Созваниваемся по видео в Zoom или встречаемся лично. Знакомимся, обсуждаем проект, бриф. Согласуем сроки, стоимость и заключаем договор.</p>
+          </li>
+          <li class="howto__item">
+            <h3 class="howto__subtitle">Анализ рынка и создание прототипа</h3>
+            <p class="howto__desc">Анализирую нишу, конкурентов, изучаю целевую аудиторию. На этой основе рисую прототип - концепт сайта.</p>
+          </li>
+          <li class="howto__item">
+            <h3 class="howto__subtitle">Разработка дизайна</h3>
+            <p class="howto__desc">После утверждения прототипа рисую дизайн в Figma: компьютерную и телефонную версии. Корректирую при необходимости. Утверждаем дизайн и приступаем к вёрстке.</p>
+          </li>
+          <li class="howto__item">
+            <h3 class="howto__subtitle">Вёрстка сайта</h3>
+            <p class="howto__desc">Собираю сайт, тестирую его на разных устройствах, провожу базовые seo-настройки.</p>
+          </li>
+          <li class="howto__item">
+            <h3 class="howto__subtitle">Знакомство и поддержка</h3>
+            <p class="howto__desc">Сажаю сайт на хостинг вместе с вами, записываю краткое видео о пользовании сайтом для вас + отправляю инструкцию документом (pdf, doc) + все данные для работы с сайтом (логины, пароли). Поддерживаю сайт в течение 14 дней с момента запуска на хостинге. </p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
     <section class="contact" id="contact">
       <div class="container">
         <h2 class="contact__title">
-          Drop me a line
+          Мои контакты
         </h2>
         <div class="contact__inner">
           <form class="contact__form" action="#">

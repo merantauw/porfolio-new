@@ -68,5 +68,28 @@ $(function () {
     $('.header__burger').removeClass('active');
     $('.body').removeClass('lock');
   })
+})
 
+document.addEventListener('mousemove', e => {
+  Object.assign(document.documentElement, {
+    style: `
+    --move-x: ${(e.clientX - window.innerWidth / 2) * -.005}deg;
+    --move-y: ${(e.clientY - window.innerHeight / 2) * -.01}deg;
+    `
+  })
+})
+
+const RANDOM = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+const PARTICLES = document.querySelectorAll('.particle')
+PARTICLES.forEach(P => {
+	P.setAttribute('style', `
+		--x: ${RANDOM(20, 80)};
+		--y: ${RANDOM(20, 80)};
+		--duration: ${RANDOM(6, 20)};
+		--delay: ${RANDOM(1, 10)};
+		--alpha: ${RANDOM(40, 90) / 100};
+		--origin-x: ${Math.random() > 0.5 ? RANDOM(300, 800) * -1 : RANDOM(300, 800)}%;
+		--origin-y: ${Math.random() > 0.5 ? RANDOM(300, 800) * -1 : RANDOM(300, 800)}%;
+		--size: ${RANDOM(40, 90) / 100};
+	`)
 })

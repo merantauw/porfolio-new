@@ -1,24 +1,12 @@
-@mixin montserrat-400{
-  font-family: "Montserrat-Regular", sans-serif;
+@mixin comfortaa-400{
+  font-family: "Comfortaa-Regular", cursive;
   font-weight: 400;
 }
-@mixin montserrat-500{
-  font-family: "Montserrat-Medium", sans-serif;
+@mixin comfortaa-500{
+  font-family: "Comfortaa-Medium", cursive;
   font-weight: 500;
 }
-@mixin montserrat-700{
-  font-family: "Montserrat-Bold", sans-serif;
+@mixin comfortaa-700{
+  font-family: "Comfortaa-Bold", cursive;
   font-weight: 700;
-}
-@mixin montserrat-900{
-  font-family: "Montserrat-Black", sans-serif;
-  font-weight: 900;
-}
-@mixin pixel{
-  font-family: "PixelIntv", sans-serif;
-  font-weight: 400;
-}
-@mixin keepon{
-  font-family: "KeeponTruckin", sans-serif;
-  font-weight: 400;
 }
