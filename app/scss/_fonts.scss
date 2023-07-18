@@ -25,3 +25,12 @@
   url("../fonts/Comfortaa-Bold.woff") format("woff");
   font-display: swap;
 }
+@font-face{
+  font-family: "a_lcdnovaobl";
+  font-weight: 400;
+  font-style: normal;
+  src: local("a_lcdnovaobl"),
+  url("../fonts/a_lcdnovaobl.woff2") format("woff2"),
+  url("../fonts/a_lcdnovaobl.woff") format("woff");
+  font-display: swap;
+}
