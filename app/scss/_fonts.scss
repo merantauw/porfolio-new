@@ -4,7 +4,8 @@
   font-style: normal;
   src: local("Comfortaa-Regular"),
   url("../fonts/Comfortaa-Regular.woff2") format("woff2"),
-  url("../fonts/Comfortaa-Regular.woff") format("woff");
+  url("../fonts/Comfortaa-Regular.woff") format("woff"),
+  url("../fonts/Comfortaa-Regular.svg") format("svg");
   font-display: swap;
 }
 @font-face{
@@ -13,7 +14,8 @@
   font-style: normal;
   src: local("Comfortaa-Medium"),
   url("../fonts/Comfortaa-Medium.woff2") format("woff2"),
-  url("../fonts/Comfortaa-Medium.woff") format("woff");
+  url("../fonts/Comfortaa-Medium.woff") format("woff"),
+  url("../fonts/Comfortaa-Medium.svg") format("svg");
   font-display: swap;
 }
 @font-face{
@@ -22,7 +24,8 @@
   font-style: normal;
   src: local("Comfortaa-Bold"),
   url("../fonts/Comfortaa-Bold.woff2") format("woff2"),
-  url("../fonts/Comfortaa-Bold.woff") format("woff");
+  url("../fonts/Comfortaa-Bold.woff") format("woff"),
+  url("../fonts/Comfortaa-Bold.svg") format("svg");
   font-display: swap;
 }
 @font-face{
@@ -31,6 +34,7 @@
   font-style: normal;
   src: local("a_lcdnovaobl"),
   url("../fonts/a_lcdnovaobl.woff2") format("woff2"),
-  url("../fonts/a_lcdnovaobl.woff") format("woff");
+  url("../fonts/a_lcdnovaobl.woff") format("woff"),
+  url("../fonts/a_lcdnovaobl.svg") format("svg");
   font-display: swap;
 }

@@ -9,7 +9,7 @@ $(function () {
   });
 
   //плавный скролл
-  $(".menu__link, .header__logo, .about__item-link").on("click", function (event) {
+  $(".menu__link, .header__logo, .about__item-link, .btn" ).on("click", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
